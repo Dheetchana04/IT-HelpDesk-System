@@ -1,0 +1,20 @@
+﻿@model ITDesk.Models.Asset
+
+<h2>Add Asset</h2>
+
+<form asp-action="Create" method="post">
+
+    <label>Asset Type</label>
+    <input asp-for="AssetType" class="form-control" />
+
+    <label>Asset Name</label>
+    <input asp-for="AssetName" class="form-control" />
+
+    <label>Assigned To</label>
+    <input asp-for="AssignedTo" class="form-control" />
+
+    <button type="submit" class="btn btn-primary mt-2">
+        Save
+    </button>
+
+</form>

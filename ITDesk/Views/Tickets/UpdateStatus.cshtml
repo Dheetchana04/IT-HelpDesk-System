@@ -1,0 +1,22 @@
+﻿@model Ticket
+
+<h2>Update Ticket Status</h2>
+
+<form asp-action="UpdateStatus" method="post">
+
+    <!-- Hidden ID -->
+    <input type="hidden" asp-for="Id" />
+
+    <label>Status</label>
+    <select name="status" class="form-control">
+        <option>Open</option>
+        <option>In Progress</option>
+        <option>Resolved</option>
+        <option>Closed</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary mt-2">
+        Save
+    </button>
+
+</form>

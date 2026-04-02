@@ -1,0 +1,24 @@
+﻿@model IEnumerable<ITDesk.Models.Asset>
+
+<h2>Assets List</h2>
+
+<a asp-action="Create" class="btn btn-success">
+    Add New Asset
+</a>
+
+<table class="table mt-3">
+    <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Assigned To</th>
+    </tr>
+
+    @foreach (var asset in Model)
+    {
+        <tr>
+            <td>@asset.AssetType</td>
+            <td>@asset.AssetName</td>
+            <td>@asset.AssignedTo</td>
+        </tr>
+    }
+</table>

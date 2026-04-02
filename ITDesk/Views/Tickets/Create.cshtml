@@ -1,0 +1,50 @@
+﻿@model Ticket
+@{
+    ViewData["Title"] = "Raise Ticket";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-7">
+
+        <div class="card shadow-lg rounded-4">
+            <div class="card-body p-4">
+
+                <h2 class="text-primary fw-bold mb-4">
+                    Raise a Support Ticket
+                </h2>
+
+                <form asp-action="Create" method="post">
+
+                    <div class="mb-3">
+                        <label class="form-label">Category</label>
+                        <input asp-for="Category" class="form-control"
+                               placeholder="Hardware / Software issue" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Priority</label>
+                        <select asp-for="Priority" class="form-select">
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Description</label>
+                        <textarea asp-for="Description"
+                                  class="form-control"
+                                  rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Submit Ticket
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="mt-4">
+    <h2 class="fw-bold text-primary mb-4">
+        Admin Dashboard
+    </h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow-sm rounded-4 border-0">
+                <div class="card-body text-center">
+                    <h5>Total Tickets</h5>
+                    <h2 class="text-primary fw-bold">@ViewBag.Total</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm rounded-4 border-0">
+                <div class="card-body text-center">
+                    <h5>Open Tickets</h5>
+                    <h2 class="text-warning fw-bold">@ViewBag.Open</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm rounded-4 border-0">
+                <div class="card-body text-center">
+                    <h5>Resolved Tickets</h5>
+                    <h2 class="text-success fw-bold">@ViewBag.Resolved</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
