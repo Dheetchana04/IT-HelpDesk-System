@@ -101,13 +101,13 @@ A full-featured web-based IT support system built using ASP.NET MVC and SQL Serv
 
 ## 📁 Project Structure
 ITHelpDeskSystem/
-      ├── Controllers/
-      ├── Models/
-      ├── Views/
-      ├── Data/
-      ├── Migrations/
-      ├── wwwroot/
-      └── Program.cs
+  ├── Controllers/
+  ├── Models/
+  ├── Views/
+  ├── Data/
+  ├── Migrations/
+  ├── wwwroot/
+  └── Program.cs
 
 
 ---
